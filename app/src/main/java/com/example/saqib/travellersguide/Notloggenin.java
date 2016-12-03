@@ -18,7 +18,7 @@ public class Notloggenin extends AppCompatActivity {
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
-    public void onClickplaygame(View view){
+    public void emergency(View view){
 
         Intent intent = new Intent(Notloggenin.this,Emergency.class);
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

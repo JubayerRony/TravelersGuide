@@ -27,7 +27,6 @@
         <activity android:name=".Emergency" />
         <activity android:name=".Profile" />
         <activity android:name=".Post" />
-        <activity android:name=".AddItem" />
         <activity android:name=".AddedItem" />
         <activity android:name=".Posted" />
         <activity android:name=".EmergencyResult" />

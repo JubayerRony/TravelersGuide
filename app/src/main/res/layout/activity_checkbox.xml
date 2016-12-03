@@ -56,11 +56,21 @@
         android:text="Add Items"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/orange"
-        android:layout_toEndOf="@+id/orange"
-        android:layout_marginLeft="29dp"
-        android:layout_marginStart="29dp"
         android:id="@+id/button8"
-        android:onClick="additems"/>
+        android:onClick="additems"
+        android:layout_below="@+id/editText14"
+        android:layout_alignRight="@+id/lemon"
+        android:layout_alignEnd="@+id/lemon" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Saline..."
+        android:ems="10"
+        android:id="@+id/editText14"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/orange"
+        android:layout_alignLeft="@+id/button8"
+        android:layout_alignStart="@+id/button8" />
 </RelativeLayout>
