@@ -33,6 +33,7 @@
         <activity android:name=".EmergencyResult" />
         <activity android:name=".Login" />
         <activity android:name=".Signup" />
+        <activity android:name=".tripactivity"></activity>
     </application>
 
 </manifest>

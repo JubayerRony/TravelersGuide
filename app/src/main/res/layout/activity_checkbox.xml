@@ -11,7 +11,7 @@
     tools:context="com.example.saqib.travellersguide.checkbox">
 
     <CheckBox
-        android:text="Orange"
+        android:text="Ace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/orange"
@@ -22,7 +22,7 @@
          />
 
     <CheckBox
-        android:text="Lemon"
+        android:text="Power Bank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/lemon"
@@ -32,7 +32,7 @@
         android:layout_alignParentStart="true" />
 
     <CheckBox
-        android:text="Grape"
+        android:text="Charger"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/grape"
@@ -42,7 +42,7 @@
         android:layout_alignParentStart="true" />
 
     <CheckBox
-        android:text="Apple"
+        android:text="Torch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="34dp"

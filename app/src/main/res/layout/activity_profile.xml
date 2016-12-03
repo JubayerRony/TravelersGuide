@@ -11,25 +11,80 @@
     tools:context="com.example.saqib.travellersguide.Profile">
 
     <Button
-        android:text="Post"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="101dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="136dp"
-        android:id="@+id/button6"
-        android:onClick="post"/>
-
-    <Button
         android:text="Create Trip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button7"
-        android:layout_centerVertical="true"
+        android:onClick="createtrip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+
+    <Button
+        android:text="Cox Bazar"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/button7"
+        android:layout_toLeftOf="@+id/button7"
+        android:layout_toStartOf="@+id/button7"
+        android:layout_marginTop="54dp"
+        android:id="@+id/button6"
+        android:layout_height="80dp"
+        android:onClick="checkbox" />
+
+    <Button
+        android:text="Bandorban"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/button6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:id="@+id/button17"
+        android:onClick="checkbox" />
+
+    <Button
+        android:text="Sylhet"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="96dp"
+        android:id="@+id/button18"
+        android:layout_below="@+id/button6"
         android:layout_alignLeft="@+id/button6"
         android:layout_alignStart="@+id/button6"
-        android:onClick="createtrip"/>
+        android:onClick="checkbox" />
+
+    <Button
+        android:text="Bandorban"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/button6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:id="@+id/button21" />
+
+    <Button
+        android:text="Bandorban"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/button6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:id="@+id/button20"
+        android:onClick="checkbox" />
+
+    <Button
+        android:text="Sundarban"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/button19"
+        android:layout_alignBottom="@+id/button18"
+        android:layout_alignLeft="@+id/button17"
+        android:layout_alignStart="@+id/button17"
+        android:layout_alignTop="@+id/button18"
+        android:onClick="checkbox" />
 </RelativeLayout>

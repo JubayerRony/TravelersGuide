@@ -12,9 +12,9 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
     }
-    public void post(View view){
+    public void checkbox(View view){
 
-        Intent intent = new Intent(Profile.this,Post.class);
+        Intent intent = new Intent(Profile.this,tripactivity.class);
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
