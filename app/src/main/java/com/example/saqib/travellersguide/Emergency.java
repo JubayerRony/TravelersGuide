@@ -18,4 +18,10 @@ public class Emergency extends AppCompatActivity {
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
+
+    public void mapactivity(View view)
+    {
+        Intent intent = new Intent(Emergency.this,MapsActivity.class);
+        startActivity(intent);
+    }
 }
