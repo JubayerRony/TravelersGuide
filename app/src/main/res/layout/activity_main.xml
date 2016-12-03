@@ -8,30 +8,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.saqib.travellersguide.MainActivity">
-
+    tools:context="com.example.saqib.travellersguide.MainActivity"
+    android:background="@drawable/home1">
 
     <Button
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Play Game"
+        android:textColor="@android:color/white"
+        android:id="@+id/PlayGameButton"
+        android:background="@drawable/button_style"
+        android:layout_marginBottom="91dp"
         android:onClick="onClickplaygame"
-        android:layout_marginLeft="106dp"
-        android:layout_marginStart="106dp"
-        android:layout_marginTop="133dp"
-        android:id="@+id/button"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="Explore    "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
+        android:text="Explore"
+        android:textColor="@android:color/white"
+        android:id="@+id/ExploreButton"
+        android:background="@drawable/button_style"
+        android:layout_marginTop="82dp"
+        android:layout_alignTop="@+id/PlayGameButton"
+        android:layout_alignEnd="@+id/PlayGameButton"
+        android:layout_alignRight="@+id/PlayGameButton"
+        android:layout_alignStart="@+id/PlayGameButton"
+        android:layout_alignLeft="@+id/PlayGameButton"
         android:onClick="onClickExplore"/>
+
+
+
 </RelativeLayout>
