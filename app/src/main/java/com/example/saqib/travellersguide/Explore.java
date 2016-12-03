@@ -12,9 +12,9 @@ public class Explore extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explore);
     }
-    public void Login(View view){
+    public void myprofile(View view){
 
-        Intent intent = new Intent(Explore.this,Login.class);
+        Intent intent = new Intent(Explore.this,Profile.class);
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }

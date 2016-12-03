@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onClickExplore(View view){
 
-        Intent intent = new Intent(MainActivity.this,Explore.class);
+        Intent intent = new Intent(MainActivity.this,Notloggenin.class);
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
