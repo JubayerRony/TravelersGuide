@@ -8,75 +8,199 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.saqib.travellersguide.Explore">
-
-    <Button
-        android:text="My Profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="41dp"
-        android:layout_marginStart="41dp"
-        android:id="@+id/button4"
-        android:textAlignment="center"
-        android:onClick="myprofile"
+    tools:context="com.example.saqib.travellersguide.Explore"
+    android:background="@drawable/t5">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="700dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:text="emergency"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button5"
-        android:textAlignment="center"
-        android:onClick="emergency"
-        android:layout_marginRight="37dp"
-        android:layout_marginEnd="37dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_marginRight="11dp"
-        android:layout_marginEnd="11dp"
-        android:id="@+id/editText9"
-        android:hint="search"
-        android:layout_below="@+id/button4"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_width="100dp" />
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp">
 
-    <EditText
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Button
+                android:text="emergency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:background="@drawable/button_style2"
+                android:textColor="@android:color/white"
+                android:id="@+id/button4"
+                android:textAlignment="center"
+                android:onClick="emergency"
+                android:layout_marginStart="41dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginLeft="41dp"
+                android:layout_marginRight="100dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:text="My Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:textColor="@android:color/white"
+                android:id="@+id/button5"
+                android:textAlignment="center"
+                android:onClick="myprofile"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-50dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginStart="180dp" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText9"
+                android:hint="search"
+                android:layout_width="100dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="230dp"
+                android:layout_marginLeft="230dp"
+                android:layout_below="@+id/button5"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/editText10"
-        android:layout_width="300dp"
+        android:layout_width="305dp"
         android:hint="write your post here..."
-        android:layout_height="100dp"
-        android:layout_below="@+id/editText9"
-        android:layout_alignRight="@+id/button16"
-        android:layout_alignEnd="@+id/button16" />
-
-    <Button
-        android:text="Post"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/button5"
+        android:layout_centerHorizontal="true"
+                android:layout_weight="0.23" />
+            <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:id="@+id/button16"
+        android:id="@+id/radioGroup"
         android:layout_below="@+id/editText10"
-        android:layout_alignLeft="@+id/editText9"
-        android:layout_alignStart="@+id/editText9" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
-    <Button
-        android:text="Photo"
+        <RadioButton
+        android:text="Question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/radioButton"
         android:layout_below="@+id/editText10"
-        android:layout_alignRight="@+id/editText10"
-        android:layout_alignEnd="@+id/editText10"
-        android:id="@+id/button15" />
-    />
+        android:layout_alignLeft="@+id/radioButton2"
+        android:layout_alignStart="@+id/radioButton2" />
+
+        <RadioButton
+            android:text="Review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2"
+            android:layout_alignBottom="@+id/editText10"
+            android:layout_toLeftOf="@+id/button5"
+            android:layout_toStartOf="@+id/button5" />
+
+    </RadioGroup>
+            <Button
+                android:text="Post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:textColor="@android:color/white"
+                android:id="@+id/button16"
+                android:layout_marginLeft="225dp"
+                android:layout_marginTop="-10dp"
+                android:layout_below="@+id/editText10"
+                android:layout_alignRight="@+id/editText10"
+                android:layout_alignEnd="@+id/editText10" />
+
+            <Button
+                android:text="Photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button15"
+                android:layout_below="@+id/editText10"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="-50dp"
+                android:layout_toLeftOf="@+id/button5"
+                android:layout_toStartOf="@+id/button5" />
+
+
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/feed1"
+        android:textColor="#1F0E8E"
+        android:textAlignment="gravity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/feed2"
+        android:textColor="#B60B00"
+        android:textAlignment="gravity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/feed3"
+        android:textColor="#000000"
+        android:textAlignment="gravity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/feed4"
+        android:textColor="#1F0E8E"
+        android:textAlignment="gravity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/feed5"
+        android:textColor="#B60B00"
+        android:textAlignment="gravity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+            <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/review"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/feed6"
+        android:textColor="#000000"
+        android:textAlignment="gravity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

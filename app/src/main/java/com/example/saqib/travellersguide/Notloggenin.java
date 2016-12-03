@@ -25,13 +25,16 @@ public class Notloggenin extends AppCompatActivity {
 
         textView = (TextView) findViewById(R.id.feed2);
         textView.setTypeface(typeFace);
-        textView.setText("Which bus service would be the best for Dhaka to Cox's Bazar?\n");
+        textView.setText("Which bus service would be the best for Dhaka to Cox's Bazar route?\n");
         textView = (TextView) findViewById(R.id.feed3);
         textView.setTypeface(typeFace);
         textView.setText("Answers: \n\n"+
-                "SalimSaqib:\nI prefer Green Line. It will cost you 1800 tk but you will have the best experience.Happy travelling.\n\n"+
+                "SalimSaqib:\nI would prefer Green Line. It will cost you 1800 tk but you will have the best experience.Happy travelling.\n\n"+
                 "JubayerRony:\nActually my budget is limited. Can you suggest something at a lower cost? TIA.\n\n"+
-                "Akif:\nThen go for Shyamoli Paribahan.\n\n");
+                "Akif:\nThen go for Shyamoli Paribahan.\n\n"+
+        "******************************");
+
+
 
         textView = (TextView) findViewById(R.id.feed4);
         textView.setTypeface(typeFace);
@@ -53,7 +56,7 @@ public class Notloggenin extends AppCompatActivity {
     }
     public void emergency(View view){
 
-        Intent intent = new Intent(Notloggenin.this,Emergency.class);
+        Intent intent = new Intent(Notloggenin.this,MapsActivity.class);
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }

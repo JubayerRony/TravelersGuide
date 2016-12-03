@@ -8,7 +8,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.saqib.travellersguide.Notloggenin">
+    tools:context="com.example.saqib.travellersguide.Notloggenin"
+    android:background="@drawable/t5"
+    >>
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -20,16 +22,17 @@
         android:layout_marginEnd="13dp">
 
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
 
 
         <Button
             android:text="Emergency"
             android:background="@drawable/button_style2"
             android:textColor="@android:color/white"
-            android:layout_width="184dp"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:id="@+id/button24"
             android:onClick="emergency"
@@ -37,6 +40,7 @@
             android:layout_alignLeft="@+id/button23"
             android:layout_alignStart="@+id/button23"
             android:layout_marginTop="51dp"
+            android:layout_marginLeft="20dp"
             android:layout_alignRight="@+id/button23"
             android:layout_alignEnd="@+id/button23" />
 
@@ -44,17 +48,21 @@
         android:text="Log In/ Sign UP"
         android:background="@drawable/button_style"
         android:textColor="@android:color/white"
-        android:layout_width="185dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button23"
         android:onClick="login"
-        android:layout_marginTop="29dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="-50dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-    <TextView
+        android:layout_centerHorizontal="true"
+            android:elevation="22dp" />
+
+        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/feed1"
         android:textColor="#1F0E8E"
         android:textAlignment="gravity"
@@ -64,7 +72,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/feed2"
             android:textColor="#B60B00"
             android:textAlignment="gravity"
@@ -74,7 +82,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/feed3"
             android:textColor="#000000"
             android:textAlignment="gravity"
@@ -84,7 +92,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/feed4"
             android:textColor="#1F0E8E"
             android:textAlignment="gravity"
@@ -94,7 +102,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/feed5"
             android:textColor="#B60B00"
             android:textAlignment="gravity"
@@ -108,7 +116,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/feed6"
             android:textColor="#000000"
             android:textAlignment="gravity"
