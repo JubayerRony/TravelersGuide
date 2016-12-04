@@ -6,6 +6,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class tripactivity extends AppCompatActivity {
 
@@ -13,24 +14,24 @@ public class tripactivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tripactivity);
+
+
     }
 
     public void added(View view) {
 
-        AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
-        builder1.setMessage("Item added");
-        builder1.setCancelable(true);
+        Intent i = new Intent(tripactivity.this,ItemAdded.class);
 
-        AlertDialog alert11 = builder1.create();
-        alert11.show();
+        EditText edittext = (EditText)findViewById(R.id.editText14);
+        String text = edittext.getText().toString();
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
+        Bundle bundle = new Bundle();
+        bundle.putString("key1",text);
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        i.putExtras(bundle);
+        startActivity(i);
 
-                Intent i = new Intent(getApplicationContext(),Profile.class);
-                startActivity(i);
-            }
-        }, 2000);
     }
 }
+
+
