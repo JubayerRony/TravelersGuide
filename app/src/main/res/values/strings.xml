@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TravellersGuide</string>
+    <string name="app_name">Travel Guide: Bangladesh</string>
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->

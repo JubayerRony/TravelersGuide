@@ -45,7 +45,7 @@ public class ItemAdded extends AppCompatActivity {
     }
     public void Done(View view) {
 
-        Intent i = new Intent(getApplicationContext(),Profile.class);
+        Intent i = new Intent(getApplicationContext(),Explore.class);
         startActivity(i);
 
     }

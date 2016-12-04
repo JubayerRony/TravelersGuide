@@ -5,6 +5,7 @@ import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class Explore extends AppCompatActivity {
@@ -28,8 +29,8 @@ public class Explore extends AppCompatActivity {
         textView.setText("Answers: \n\n"+
                 "SalimSaqib:\nI would prefer Green Line. It will cost you 1800 tk but you will have the best experience.Happy travelling.\n\n"+
                 "JubayerRony:\nActually my budget is limited. Can you suggest something at a lower cost? TIA.\n\n"+
-                "Akif:\nThen go for Shyamoli Paribahan.\n\n"+
-                "******************************");
+                "Akif:\nThen go for Shyamoli Paribahan.");
+
 
 
 
@@ -62,5 +63,19 @@ public class Explore extends AppCompatActivity {
         Intent intent = new Intent(Explore.this,Community.class);
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
+    }
+    public String text = "";
+    public void post(View view)
+    {
+        EditText editText = (EditText)findViewById(R.id.editText10);
+        text = "Rango posted a question:\n"+editText.getText().toString()+"\n"+text;
+        System.out.println(text);
+
+        TextView textView = (TextView)findViewById(R.id.dynamic1);
+        Typeface typeFace = Typeface.createFromAsset(getAssets(), "GOTHIC.TTF");
+        textView.setTypeface(typeFace);
+        textView.setText(text);
+
+
     }
 }

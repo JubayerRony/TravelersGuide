@@ -67,7 +67,8 @@
 
         <activity android:name=".Community" />
         <activity android:name=".UpdatedTripList" />
-        <activity android:name=".ItemAdded"></activity>
+        <activity android:name=".ItemAdded" />
+        <activity android:name=".Map"></activity>
     </application>
 
 </manifest>

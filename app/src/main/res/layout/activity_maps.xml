@@ -33,7 +33,7 @@
 
 
         <EditText
-            android:layout_width="183dp"
+            android:layout_width="153dp"
             android:layout_height="wrap_content"
             android:id="@+id/TFaddress" />
         <Button
