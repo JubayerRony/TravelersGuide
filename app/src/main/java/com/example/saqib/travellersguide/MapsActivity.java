@@ -3,6 +3,7 @@ package com.example.saqib.travellersguide;
 import android.*;
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.graphics.Typeface;
 import android.location.Address;
 import android.location.Geocoder;
 import android.net.Uri;
@@ -10,9 +11,11 @@ import android.os.AsyncTask;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.appindexing.Action;
@@ -48,6 +51,31 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+        Typeface typeFace = Typeface.createFromAsset(getAssets(), "GOTHIC.TTF");
+        TextView textView;
+        textView = (TextView) findViewById(R.id.feed1);
+
+        textView.setTypeface(typeFace);
+        textView.setText("\n\n\nDhaka Medical College");
+
+        textView = (TextView) findViewById(R.id.feed2);
+        textView.setTypeface(typeFace);
+        textView.setText("Phone no : 01763987621\n");
+
+        textView = (TextView) findViewById(R.id.feed3);
+        textView.setTypeface(typeFace);
+        textView.setText("\nShahbag Thana");
+
+        textView = (TextView) findViewById(R.id.feed4);
+        textView.setTypeface(typeFace);
+        textView.setText("Phone no: 01654229762\n");
+
+
+
+
+
+
+
     }
 
     @Override
