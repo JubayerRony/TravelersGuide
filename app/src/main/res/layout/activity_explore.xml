@@ -28,7 +28,7 @@
 
             <Button
                 android:text="emergency"
-                android:layout_width="wrap_content"
+                android:layout_width="126dp"
                 android:layout_height="wrap_content"
 
 
@@ -48,7 +48,7 @@
 
             <Button
                 android:text="Trips"
-                android:layout_width="wrap_content"
+                android:layout_width="131dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button_style"
                 android:textColor="@android:color/white"

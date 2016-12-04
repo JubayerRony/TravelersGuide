@@ -12,32 +12,16 @@
     android:background="@drawable/home1">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Play Game"
-        android:textColor="@android:color/white"
-        android:id="@+id/PlayGameButton"
-        android:background="@drawable/button_style"
-        android:layout_marginBottom="91dp"
-        android:onClick="onClickplaygame"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:text="Explore"
         android:textColor="@android:color/white"
         android:id="@+id/ExploreButton"
         android:background="@drawable/button_style"
-        android:layout_marginTop="82dp"
-        android:layout_alignTop="@+id/PlayGameButton"
-        android:layout_alignEnd="@+id/PlayGameButton"
-        android:layout_alignRight="@+id/PlayGameButton"
-        android:layout_alignStart="@+id/PlayGameButton"
-        android:layout_alignLeft="@+id/PlayGameButton"
-        android:onClick="onClickExplore"/>
-
+        android:onClick="onClickExplore"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
