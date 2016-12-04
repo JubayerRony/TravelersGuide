@@ -42,7 +42,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/editText"
-        android:hint="Cox Bazar..." />
+        android:hint="e.g Cox's Bazar" />
 
     <TextView
         android:text="Date:"

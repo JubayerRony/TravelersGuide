@@ -57,4 +57,10 @@ public class Explore extends AppCompatActivity {
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
+    public void community(View view){
+
+        Intent intent = new Intent(Explore.this,Community.class);
+        //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
 }
