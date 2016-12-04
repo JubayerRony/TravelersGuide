@@ -53,7 +53,7 @@ public class Explore extends AppCompatActivity {
     }
     public void emergency(View view){
 
-        Intent intent = new Intent(Explore.this,Emergency.class);
+        Intent intent = new Intent(Explore.this,MapsActivity.class);
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }

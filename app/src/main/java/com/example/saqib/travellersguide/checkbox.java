@@ -20,9 +20,6 @@ public class checkbox extends AppCompatActivity {
         builder1.setMessage("Item added");
         builder1.setCancelable(true);
 
-
-
-
         AlertDialog alert11 = builder1.create();
         alert11.show();
 
@@ -30,7 +27,7 @@ public class checkbox extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i=new Intent(getApplicationContext(),checkbox.class);
+                Intent i=new Intent(getApplicationContext(),Profile.class);
                 startActivity(i);
             }
         }, 2000);

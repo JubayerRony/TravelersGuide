@@ -15,7 +15,7 @@ public class createtrip extends AppCompatActivity {
 
     public void onClickcreate(View view){
 
-        Intent intent = new Intent(createtrip.this,Test.class);
+        Intent intent = new Intent(createtrip.this,checkbox.class);
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }

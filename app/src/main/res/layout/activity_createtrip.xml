@@ -44,41 +44,38 @@
         android:id="@+id/editText"
         android:hint="Cox Bazar..." />
 
-    <Button
-        android:text="Create"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/datePicker"
-        android:layout_toRightOf="@+id/textView3"
-        android:layout_toEndOf="@+id/textView3"
-        android:layout_marginLeft="37dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="26dp"
-        android:id="@+id/button3"
-        android:onClick="onClickcreate"/>
-
-    <DatePicker
-        android:layout_width="wrap_content"
-        android:id="@+id/datePicker"
-        android:layout_below="@+id/textView4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="11dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="15dp"
-        android:layout_height="200dp"
-        tools:layout_height="200dp"
-        android:elevation="@android:dimen/app_icon_size"
-        android:datePickerMode="spinner"
-        android:calendarViewShown="false" />
-
     <TextView
         android:text="Date:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:id="@+id/textView4"
         tools:text="Date:"
         android:layout_below="@+id/editText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:id="@+id/datePicker"
+        android:layout_marginTop="-5dp"
+        android:layout_height="200dp"
+        tools:layout_height="200dp"
+        android:elevation="@android:dimen/app_icon_size"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/button3"
+        android:background="@drawable/button_style"
+        android:textColor="@android:color/white"
+        android:onClick="onClickcreate"
+        android:layout_below="@+id/datePicker"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

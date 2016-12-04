@@ -32,7 +32,7 @@
             android:text="Emergency"
             android:background="@drawable/button_style2"
             android:textColor="@android:color/white"
-            android:layout_width="140dp"
+            android:layout_width="135dp"
             android:layout_height="wrap_content"
             android:id="@+id/button24"
             android:onClick="emergency"
@@ -52,12 +52,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/button23"
         android:onClick="login"
-            android:layout_marginStart="190dp"
-            android:layout_marginLeft="170dp"
+
             android:layout_marginTop="-50dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-            android:elevation="22dp" />
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="170dp"
+            android:layout_marginLeft="170dp"
+            />
 
         <TextView
         android:layout_width="wrap_content"

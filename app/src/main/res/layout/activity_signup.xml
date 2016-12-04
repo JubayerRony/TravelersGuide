@@ -67,19 +67,6 @@
         android:id="@+id/editText12"
         android:hint="...." />
 
-    <Button
-        android:text="Sign Up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="21dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="67dp"
-        android:id="@+id/button14"
-        android:layout_below="@+id/editText12"
-        android:layout_toRightOf="@+id/textView15"
-        android:layout_toEndOf="@+id/textView15"
-        android:onClick="signupsubmit"/>
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -91,4 +78,19 @@
         android:layout_alignLeft="@+id/textView17"
         android:layout_alignStart="@+id/textView17"
         android:layout_marginTop="11dp" />
+
+    <Button
+        android:text="Sign Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="29dp"
+        android:id="@+id/button14"
+        android:background="@drawable/button_style"
+        android:textColor="@android:color/white"
+        android:onClick="signupsubmit"
+        android:layout_below="@+id/editText12"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15" />
 </RelativeLayout>

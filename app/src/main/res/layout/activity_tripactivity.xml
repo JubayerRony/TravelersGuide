@@ -13,21 +13,111 @@
 
     <EditText
         android:layout_width="300dp"
-        android:layout_height="200dp"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_marginTop="35dp"
         android:id="@+id/editText13"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:hint="write something about the trip" />
+        android:hint="Share your memory"
+        android:layout_height="100dp" />
+
+
+    <CheckBox
+        android:text="Power Bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/powerbank"
+        android:layout_below="@+id/paracetamol"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:text="Charger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/charger"
+
+        android:layout_below="@+id/powerbank"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:text="Torch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/torch"
+        android:layout_below="@+id/charger"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Saline..."
+        android:ems="10"
+        android:id="@+id/editText14"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/torch"
+        android:layout_alignRight="@+id/button22"
+        android:layout_alignEnd="@+id/button22" />
+
+    <Button
+        android:text="Add Items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:textColor="@android:color/white"
+        android:id="@+id/button8"
+        android:onClick="added"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
 
     <Button
         android:text="Add Photo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:textColor="@android:color/white"
+        android:id="@+id/button22"
+        android:layout_marginTop="23dp"
         android:layout_below="@+id/editText13"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:id="@+id/button22" />
+        android:layout_alignLeft="@+id/editText13"
+        android:layout_alignStart="@+id/editText13"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp" />
+
+    <Button
+        android:text="Post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:textColor="@android:color/white"
+        android:id="@+id/button23"
+        android:layout_alignBaseline="@+id/button22"
+        android:layout_alignBottom="@+id/button22"
+        android:layout_alignRight="@+id/editText13"
+        android:layout_alignEnd="@+id/editText13"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp" />
+
+    <CheckBox
+        android:text="Paracetamol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paracetamol"
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Item list for this tour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/paracetamol"
+        android:layout_alignLeft="@+id/editText13"
+        android:layout_alignStart="@+id/editText13"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/textView5" />
 </RelativeLayout>

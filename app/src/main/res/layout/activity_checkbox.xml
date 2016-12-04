@@ -12,7 +12,7 @@
     android:background="@drawable/t5">
 
     <CheckBox
-        android:text="Ace"
+        android:text="Paracetamol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/orange"
@@ -57,6 +57,8 @@
         android:text="Add Items"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:textColor="@android:color/white"
         android:id="@+id/button8"
         android:onClick="additems"
         android:layout_below="@+id/editText14"

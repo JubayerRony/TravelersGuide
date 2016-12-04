@@ -24,4 +24,10 @@ public class Profile extends AppCompatActivity {
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
+    public void myprofile(View view){
+
+        Intent intent = new Intent(Profile.this,Explore.class);
+        //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
 }
