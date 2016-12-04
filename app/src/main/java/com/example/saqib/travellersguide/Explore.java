@@ -2,6 +2,8 @@ package com.example.saqib.travellersguide;
 
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.os.Handler;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -68,7 +70,7 @@ public class Explore extends AppCompatActivity {
     public void post(View view)
     {
         EditText editText = (EditText)findViewById(R.id.editText10);
-        text = "Rango posted a question:\n"+editText.getText().toString()+"\n"+text;
+        text = "rango posted a question:\n"+editText.getText().toString()+"\n"+text;
         System.out.println(text);
 
         TextView textView = (TextView)findViewById(R.id.dynamic1);
@@ -77,5 +79,59 @@ public class Explore extends AppCompatActivity {
         textView.setText(text);
 
 
+    }
+    public void plus(View view) {
+
+        AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
+        builder1.setMessage("Photo Added!");
+        builder1.setCancelable(true);
+
+        AlertDialog alert11 = builder1.create();
+        alert11.show();
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                Intent i = new Intent(getApplicationContext(), Explore.class);
+                startActivity(i);
+            }
+        }, 2000);
+    }
+    public void up(View view) {
+
+        AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
+        builder1.setMessage("Given an Up Vote!");
+        builder1.setCancelable(true);
+
+        AlertDialog alert11 = builder1.create();
+        alert11.show();
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                Intent i = new Intent(getApplicationContext(), Explore.class);
+                startActivity(i);
+            }
+        }, 2000);
+    }
+    public void down(View view) {
+
+        AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
+        builder1.setMessage("Given a Down Vote!");
+        builder1.setCancelable(true);
+
+        AlertDialog alert11 = builder1.create();
+        alert11.show();
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                Intent i = new Intent(getApplicationContext(), Explore.class);
+                startActivity(i);
+            }
+        }, 2000);
     }
 }
