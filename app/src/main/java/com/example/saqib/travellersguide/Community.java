@@ -135,7 +135,7 @@ public class Community extends AppCompatActivity {
             }
         }, 4000);
     }
-    public void badge56(View view) {
+    public void badge6(View view) {
 
         AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
         builder1.setMessage("1 YEAR OF EXCELLENCY:\nUse this app for 1 year!");

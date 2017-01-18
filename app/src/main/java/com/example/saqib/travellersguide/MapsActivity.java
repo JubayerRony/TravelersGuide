@@ -56,7 +56,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         textView = (TextView) findViewById(R.id.feed1);
 
         textView.setTypeface(typeFace);
-        textView.setText("\n\n\nAl Raaji Hospital");
+        textView.setText("\n\n\nDhaka Medical College and Hospital");
 
         textView = (TextView) findViewById(R.id.feed2);
         textView.setTypeface(typeFace);
@@ -64,7 +64,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         textView = (TextView) findViewById(R.id.feed3);
         textView.setTypeface(typeFace);
-        textView.setText("\nTejgaon Thana");
+        textView.setText("\nShahabag Thana");
 
         textView = (TextView) findViewById(R.id.feed4);
         textView.setTypeface(typeFace);
@@ -135,7 +135,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void setUpMap() {
-        mMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(23.7315541,90.3903006)).title("Dhaka University"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(23.7255225,90.3946501)).title("DHaka Medical College and Hospital"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(23.7371722,90.393936)).title("Shahabag"));
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions

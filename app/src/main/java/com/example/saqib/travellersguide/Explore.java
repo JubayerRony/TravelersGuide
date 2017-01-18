@@ -7,7 +7,10 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class Explore extends AppCompatActivity {
@@ -48,7 +51,7 @@ public class Explore extends AppCompatActivity {
         textView.setText("Sajek is one of most beautiful place in Bangladesh, it's a must for a nature lover. Try to stay minimum 1 night because the sunrise and sunset times are the most beautiful times . It's above 1800 feet from sea level. Sajek is beautiful in all seasons, locals are mostly from Tripura and lusai tribes . Few chakma also lives nearby. Foreign citizens are currently not allowed to visit sajek. They need special permission from Bd government which is not easy to get. Even the Bangladeshi people are not allowed to travel without the army escort which is given twice a day at 10-11 am and 3-4 pm. \n");
 
     }
-    public void myprofile(View view){
+    public void trips(View view){
 
         Intent intent = new Intent(Explore.this,Profile.class);
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -66,20 +69,40 @@ public class Explore extends AppCompatActivity {
         //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
+
     public String text = "";
-    public void post(View view)
-    {
-        EditText editText = (EditText)findViewById(R.id.editText10);
-        text = "rango posted a question:\n"+editText.getText().toString()+"\n"+text;
+   //radio button starts here
+
+    public void post(View view) {
+    RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+    String val = ((RadioButton) findViewById(radioGroup.getCheckedRadioButtonId())).getText().toString();
+    Bundle bundle =getIntent().getExtras();
+    String name = bundle.getString("name");
+    if (val.equals("Question")) {
+        EditText editText = (EditText) findViewById(R.id.editText10);
+        text = name +  " posted a question:\n" + editText.getText().toString() + "\n" + text;
         System.out.println(text);
 
-        TextView textView = (TextView)findViewById(R.id.dynamic1);
+        TextView textView = (TextView) findViewById(R.id.dynamic1);
         Typeface typeFace = Typeface.createFromAsset(getAssets(), "GOTHIC.TTF");
         textView.setTypeface(typeFace);
         textView.setText(text);
+        editText.setText("");
+    } else {
+        EditText editText = (EditText) findViewById(R.id.editText10);
+        text = text+"\n"+name + " posted a review:\n" + editText.getText().toString() + "\n";
+        System.out.println(text);
 
+        TextView textView = (TextView) findViewById(R.id.dynamic1);
+        Typeface typeFace = Typeface.createFromAsset(getAssets(), "GOTHIC.TTF");
+        textView.setTypeface(typeFace);
+        textView.setText(text);
+        editText.setText("");
 
     }
+
+}
+
     public void plus(View view) {
 
         AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
@@ -134,4 +157,6 @@ public class Explore extends AppCompatActivity {
             }
         }, 2000);
     }
+
+
 }

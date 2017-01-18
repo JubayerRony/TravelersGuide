@@ -57,7 +57,7 @@
         android:layout_alignEnd="@+id/button7" />
 
     <Button
-        android:text="Cox Bazar"
+        android:text="Cox's Bazar"
         android:layout_width="110dp"
         android:background="@drawable/button_style"
         android:textColor="@android:color/white"

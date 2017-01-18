@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 
 public class UpdatedTripList extends AppCompatActivity {
 
+    RelativeLayout ll;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +22,7 @@ public class UpdatedTripList extends AppCompatActivity {
         myButton.setText(text);
         myButton.setBackgroundResource(R.drawable.button_style);
 
-        RelativeLayout ll = (RelativeLayout)findViewById(R.id.activity_profile);
+        ll = (RelativeLayout)findViewById(R.id.activity_profile);
         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
         lp.topMargin = 1000;
         lp.leftMargin = 130;

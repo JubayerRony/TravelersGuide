@@ -17,7 +17,7 @@ public class tripactivity extends AppCompatActivity {
 
 
     }
-
+    public  boolean trip = false;
     public void added(View view) {
 
         Intent i = new Intent(tripactivity.this,ItemAdded.class);
